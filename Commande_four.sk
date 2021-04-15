@@ -1,0 +1,310 @@
+options:
+
+	message_cuit: &7&l[&6&lPlayTopia&7&L]&6&lDinnngggg, c'est cuit!
+
+	err: &7&L[&6&lPlayTopia&7&l]&cIl n'y a pas d'objet(s) à faire cuire.
+
+	
+
+command /furnace:
+
+	aliases: /four        #Evite de créer plusieurs commande qui font exactement le même que le furnace :)
+
+	permission: skript.furnace
+
+	permission message: &cVous n'avez pas la permission nécessaire.
+
+	trigger:
+
+		if tool of player is beef:
+
+			set {_n} to amount of beef in player's inventory
+
+			if player has {_n} of beef:
+
+				remove {_n} of beef from player's inventory
+
+				give {_n} of cooked beef to player
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is porkchop:
+
+			set {_n} to amount of porkchop in player's inventory
+
+			if player has {_n} of porkchop:
+
+				remove {_n} of porkchop from player's inventory
+
+				give {_n} of cooked porkchop to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is emerald ore:
+
+			set {_n} to amount of emerald ore in player's inventory
+
+			if player has {_n} of emerald ore:
+
+				remove {_n} of emerald ore from player's inventory
+
+				give {_n} of emerald to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is gold ore:
+
+			set {_n} to amount of gold ore in player's inventory
+
+			if player has {_n} of gold ore:
+
+				remove {_n} of gold ore from player's inventory
+
+				give {_n} of gold ingot to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is iron ore:
+
+			set {_n} to amount of iron ore in player's inventory
+
+			if player has {_n} of iron ore:
+
+				remove {_n} of iron ore from player's inventory
+
+				give {_n} of iron ingot to player  
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is diamond ore:
+
+			set {_n} to amount of diamond ore in player's inventory
+
+			if player has {_n} of diamond ore:
+
+				remove {_n} of diamond ore from player's inventory
+
+				give {_n} of diamond to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is coal ore:
+
+			set {_n} to amount of coal ore in player's inventory
+
+			if player has {_n} of coal ore:
+
+				remove {_n} of coal ore from player's inventory
+
+				give {_n} of coal to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is potato:
+
+			set {_n} to amount of potato in player's inventory
+
+			if player has {_n} of potato:
+
+				remove {_n} of potato from player's inventory
+
+				give {_n} of baked potato to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is raw cod:
+
+			set {_n} to amount of raw cod in player's inventory
+
+			if player has {_n} of raw cod:
+
+				remove {_n} of raw cod from player's inventory
+
+				give {_n} of cooked cod to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is raw salmon:
+
+			set {_n} to amount of raw salmon in player's inventory
+
+			if player has {_n} of raw salmon:
+
+				remove {_n} of raw salmon from player's inventory
+
+				give {_n} of cooked salmon to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is raw chicken:
+
+			set {_n} to amount of raw chicken in player's inventory
+
+			if player has {_n} of raw chicken:
+
+				remove {_n} of raw chicken from player's inventory
+
+				give {_n} of cooked chicken to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is raw rabbit:
+
+			set {_n} to amount of raw rabbit in player's inventory
+
+			if player has {_n} of raw rabbit:
+
+				remove {_n} of raw rabbit from player's inventory
+
+				give {_n} of cooked rabbit to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is raw mutton:
+
+			set {_n} to amount of raw mutton in player's inventory
+
+			if player has {_n} of raw mutton:
+
+				remove {_n} of raw mutton from player's inventory
+
+				give {_n} of cooked mutton to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is cobblestone:
+
+			set {_n} to amount of cobblestone in player's inventory
+
+			if player has {_n} of cobblestone:
+
+				remove {_n} of cobblestone from player's inventory
+
+				give {_n} of stone to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is stone brick:
+
+			set {_n} to amount of stone brick in player's inventory
+
+			if player has {_n} of stone brick:
+
+				remove {_n} of stone brick from player's inventory
+
+				give {_n} of cracked stone brick to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is clay:
+
+			set {_n} to amount of clay in player's inventory
+
+			if player has {_n} of clay:
+
+				remove {_n} of clay from player's inventory
+
+				give {_n} of brick to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is wet sponge:
+
+			set {_n} to amount of wet sponge in player's inventory
+
+			if player has {_n} of wet sponge:
+
+				remove {_n} of wet sponge from player's inventory
+
+				give {_n} of sponge to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is sand:
+
+			set {_n} to amount of sand in player's inventory
+
+			if player has {_n} of sand:
+
+				remove {_n} of sand from player's inventory
+
+				give {_n} of plain glass block to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is cactus:
+
+			set {_n} to amount of cactus in player's inventory
+
+			if player has {_n} of cactus:
+
+				remove {_n} of cactus from player's inventory
+
+				give {_n} of green dye to player 
+
+			message "{@message_cuit}"
+
+			stop 
+
+		if tool of player is log:
+
+			set {_n} to amount of log in player's inventory
+
+			if player has {_n} of log:
+
+				remove {_n} of log from player's inventory
+
+				give {_n} of charcoal to player 
+
+			message "{@message_cuit}"
+
+			stop
+		if tool of player is stone:
+
+			set {_n} to amount of stone in player's inventory
+
+			if player has {_n} of stone:
+
+				remove {_n} of stone from player's inventory
+
+				give {_n} of stonebrick to player 
+
+			message "{@message_cuit}"
+
+			stop 

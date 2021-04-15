@@ -1,0 +1,11 @@
+#By Ilovemyhouse
+
+on join:
+	set {-online::%player%} to true
+	while {-online::%player%} is true:
+		#send "&7[&a&lPlaytopia &c&lNetwork&7] &aComme vous êtes en ligne depuis 1 heure ou plus, nous vous offrons 10€!" to player
+		add 10 to the player's balance
+		wait 10 seconds
+
+on quit:
+	delete {-online::%player%}
