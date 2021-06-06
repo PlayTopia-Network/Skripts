@@ -201,5 +201,5 @@ on inventory click:
     set slot 12 of player's current inventory to crafting table named "&6Les jobs" with lore "Catégorie d'aide sur les jobs."
     set slot 14 of player's current inventory to diamond block named "&aLa banque" with lore "Catégorie d'aide sur la banque."
     set slot 16 of player's current inventory to chest named "&eAutres" with lore "Catégorie sur les autres commandes."
-    set slot 22 of player's current inventory to barrier named "&cFermer" with lore "Fermer l'interface."
+    set slot 22 of player's current inventory to barrier named "&cFermer" with lore "Fermer l'aide."
     cancel event
